@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"><head><style type="text/css">@media print {  .gmnoprint {    display:none  }}@media screen {  .gmnoscreen {    display:none  }}</style>
+<style type="text/css">
+            div#map {
+                position: relative;
+            }
+
+            div#crosshair {
+                position: absolute;
+                top: 192px;
+                height: 19px;
+                width: 19px;
+                left: 50%;
+                margin-left: -8px;
+                display: block;
+                background: url(crosshair.gif);
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+        </style>
+        <script type="text/javascript" src="Baridhara_files/js"></script><script src="Baridhara_files/main.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var map;
+            var geocoder;
+            var centerChangedLast;
+            var reverseGeocodedLast;
+            var currentReverseGeocodeResponse;
+
+            function initialize() {
+                var latlng = new google.maps.LatLng(23.799898400000000000,90.420765999999960000);
+                var myOptions = {
+                    zoom: 15,
+                    center: latlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+                geocoder = new google.maps.Geocoder();
+
+                var marker = new google.maps.Marker({
+                    position: latlng,
+                    map: map,
+                    title: "Hello World!"
+                });
+
+            }
+
+        </script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Baridhara</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link href="Baridhara_files/css.css" rel="stylesheet" type="text/css">
+	<link href="Baridhara_files/default.css" rel="stylesheet" type="text/css" media="all">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<!-- Start css3menu.com HEAD section -->
+	<link rel="stylesheet" href="Baridhara_files/style.css" type="text/css">
+	<!-- End css3menu.com HEAD section -->
+	
+<script src="Baridhara_files/commonmaputilgeocodermarker.js" charset="UTF-8" type="text/javascript"></script><script src="Baridhara_files/onion.js" charset="UTF-8" type="text/javascript"></script><script src="Baridhara_files/controls.js" charset="UTF-8" type="text/javascript"></script><script src="Baridhara_files/stats.js" charset="UTF-8" type="text/javascript"></script></head>
+<body onload="initialize()">
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#"><hspace><img src="Baridhara_files/BaridharaSociety.jpg" alt="" height="35px" width="35px">Bashundhara Society</hspace></a></h1>
+			</div>
+			<div id="menu">
+<ul id="css3menu1" class="topmenu">
+	<li class="topfirst"><a href="#" style="height:32px;line-height:32px;"><img src="Baridhara_files/home2.png" alt="">Home</a></li>
+	<li class="topmenu"><a href="#" target="_parent" style="height:32px;line-height:32px;"><span><img src="Baridhara_files/services.png" alt="">Services</span></a>
+	<ul>
+		<li><a href="#"><img src="Baridhara_files/shield_and_swords.png" alt="">Security</a></li>
+		<li><a href="#"><img src="Baridhara_files/buy1.png" alt="">Garbage Cleaning</a></li>
+	</ul></li>
+	<li class="topmenu"><a href="#" style="height:32px;line-height:32px;"><span><img src="Baridhara_files/people.png" alt="">Members</span></a>
+	<ul>
+		<li><a href="#"><img src="Baridhara_files/application_form_add.png" alt="">Membership Application</a></li>
+		<li><a href="#"><img src="Baridhara_files/list_all_participants.png" alt="">Members List</a></li>
+	</ul></li>
+	<li class="topmenu"><a href="#" style="height:32px;line-height:32px;"><span><img src="Baridhara_files/service.png" alt="">Youths</span></a>
+	<ul>
+		<li><a href="#"><img src="Baridhara_files/balls.png" alt="">Games &amp; Sports</a></li>
+		<li><a href="#"><img src="Baridhara_files/gossip_birds.png" alt="">Groups in Social Media</a></li>
+	</ul></li>
+	<li class="topmenu"><a href="#" style="height:32px;line-height:32px;"><img src="Baridhara_files/contact.png" alt="">Complain Box</a></li>
+	<li class="topmenu"><a href="#" style="height:32px;line-height:32px;"><span><img src="Baridhara_files/help.png" alt="">Abouts Us</span></a>
+	<ul>
+		<li><a href="#">Organ-gram</a></li>
+		<li><a href="#">Organization Brief</a></li>
+		<li><a href="#"><span>Management of Society</span></a>
+		<ul>
+			<li><a href="#">Executive Committee</a></li>
+			<li><a href="#">Sub Committee</a></li>
+		</ul></li>
+		<li><a href="#">Memorandum of Articles</a></li>
+	</ul></li>
+	<li class="topmenu"><a href="#" style="height:32px;line-height:32px;"><img src="Baridhara_files/favour.png" alt="">Tips</a></li>
+	<li class="toplast"><a href="#" style="height:32px;line-height:32px;"><span><img src="Baridhara_files/stay_puft1.png" alt="">Stay With Us</span></a>
+	<ul>
+		<li><a href="#"><img src="Baridhara_files/email_feed.png" alt="">Subscribe E-mail</a></li>
+		<li><a href="#"><img src="Baridhara_files/twitters.png" alt="">Twitter</a></li>
+		<li><a href="#"><img src="Baridhara_files/facebooks.png" alt="">Facebook</a></li>
+		<li><a href="#" target="_parent"><img src="Baridhara_files/feed.png" alt="">RSS Feed</a></li>
+	</ul></li>
+</ul>
+			</div>
+			<div id="banner" class="container"><img src="Baridhara_files/img05.jpg" alt="" height="300" width="980"></div>
+		</div>
+	</div>
+	<div id="page">
+		<div id="content">
+			<div id="box1">
+				<h2 class="title"><a href="#">Welcome to Baridhara Society</a></h2>
+				<p>Welcome to the <strong>Baridhara Society</strong> Website. This 
+website includes information about our DOHS housing system, our services
+ and the Members information of DOHS housing area and our contact 
+information. We encourage to take full advantage of the information 
+provided, so we can do even better services. </p>
+			</div>
+			<div>
+				<ul class="style1">
+					<li class="first">
+						<h3>Area Introduction</h3>
+						 <div id="map" style="width:600px; height:150px">
+							<div id="map_canvas" style="width: 100%; height: 150px; position: relative; background-color: rgb(229, 227, 223); overflow: hidden;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; transform-origin: 491px 90px 0px;"><div style="position: absolute; left: 0px; top: 0px; z-index: 200;"><div style="position: absolute; left: 0px; top: 0px; z-index: 101;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 201;"><div style="position: absolute; left: 0px; top: 0px; z-index: 102;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 20px; top: -67px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 20px; top: 189px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 276px; top: -67px;"><canvas width="256" height="256" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 276px; top: 189px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -236px; top: -67px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -236px; top: 189px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 532px; top: -67px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 532px; top: 189px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 20px; top: -67px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 20px; top: 189px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 276px; top: -67px;"><canvas width="256" height="256" style="-moz-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 276px; top: 189px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -236px; top: -67px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -236px; top: 189px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 532px; top: -67px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 532px; top: 189px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 202;"><div style="position: absolute; left: 0px; top: 0px; z-index: 104;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 100;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; position: absolute; left: 20px; top: -67px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 20px; top: 189px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 276px; top: -67px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 276px; top: 189px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -236px; top: -67px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -236px; top: 189px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 532px; top: -67px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 532px; top: 189px;"></div></div></div></div><div style="position: absolute; z-index: 0; left: 0px; top: 0px;"><div style="overflow: hidden; width: 600px; height: 150px;"><img src="Baridhara_files/StaticMapService.png" style="width: 600px; height: 150px;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="width: 256px; height: 256px; position: absolute; left: 20px; top: -67px; opacity: 1; transition: opacity 200ms ease-out 0s;"><img draggable="false" src="Baridhara_files/vt_006.png" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 20px; top: 189px; opacity: 1; transition: opacity 200ms ease-out 0s;"><img draggable="false" src="Baridhara_files/vt_005.png" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 276px; top: -67px; opacity: 1; transition: opacity 200ms ease-out 0s;"><img draggable="false" src="Baridhara_files/vt.png" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 276px; top: 189px; opacity: 1; transition: opacity 200ms ease-out 0s;"><img draggable="false" src="Baridhara_files/vt_002.png" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -236px; top: -67px; opacity: 1; transition: opacity 200ms ease-out 0s;"><img draggable="false" src="Baridhara_files/vt_008.png" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -236px; top: 189px; opacity: 1; transition: opacity 200ms ease-out 0s;"><img draggable="false" src="Baridhara_files/vt_003.png" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 532px; top: -67px; opacity: 1; transition: opacity 200ms ease-out 0s;"><img draggable="false" src="Baridhara_files/vt_004.png" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 532px; top: 189px; opacity: 1; transition: opacity 200ms ease-out 0s;"><img draggable="false" src="Baridhara_files/vt_007.png" style="width: 256px; height: 256px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div></div></div></div></div><div style="margin: 2px 5px 2px 2px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a title="Click to see this area on Google Maps" href="http://maps.google.com/maps?ll=23.799859,90.418513&amp;z=15&amp;t=m&amp;hl=en-US" target="_blank" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 62px; height: 24px; cursor: pointer;"><img draggable="false" src="Baridhara_files/google_white.png" style="position: absolute; left: 0px; top: 0px; width: 62px; height: 24px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div></a></div><div style="z-index: 1000001; position: absolute; right: 0px; bottom: 0px;" class="gmnoprint"><div style="height: 19px; -moz-user-select: none; line-height: 19px; padding-right: 2px; padding-left: 50px; background: -moz-linear-gradient(left center , rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.5) 50px) repeat scroll 0% 0% transparent; font-family: Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right;"><a style="color: rgb(68, 68, 68); text-decoration: underline; cursor: pointer; display: none;">Map Data</a><span style="">Map data ©2013 Google</span><span style=""> - </span><a target="_blank" href="http://www.google.com/intl/en-US_US/help/terms_maps.html" style="color: rgb(68, 68, 68); text-decoration: underline; cursor: pointer;">Terms of Use</a></div></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Arial,sans-serif; color: rgb(34, 34, 34); box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000002; display: none; width: 256px; height: 108px; position: absolute; left: 150px; top: 5px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2013 Google</div><div style="width: 10px; height: 10px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img draggable="false" src="Baridhara_files/imgs8.png" style="position: absolute; left: -18px; top: -44px; width: 68px; height: 67px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"></div></div><div style="position: absolute; right: 0px; bottom: 0px;" class="gmnoscreen"><div style="font-family: Arial,sans-serif; font-size: 10px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2013 Google</div></div><div style="font-size: 10px; height: 17px; background-color: rgb(245, 245, 245); border: 1px solid rgb(220, 220, 220); line-height: 19px; display: none; position: absolute; right: 0px; bottom: 0px;" class="gmnoprint"><a href="http://maps.google.com/maps?ll=23.799859,90.418513&amp;z=15&amp;t=m&amp;hl=en-US&amp;skstate=action:mps_dialog$apiref:1" style="font-family: Arial,sans-serif; font-size: 85%; font-weight: bold; padding: 1px 3px; color: rgb(68, 68, 68); text-decoration: none; position: relative; bottom: 1px;" title="Report errors in the road map or imagery to Google" target="_new">Report a map error</a></div><div controlheight="84" controlwidth="32" style="margin: 5px; -moz-user-select: none; position: absolute; left: 0px; top: 0px;" class="gmnoprint"><div controlheight="40" controlwidth="32" style="position: absolute; left: 0px; top: 0px;"><div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img draggable="false" src="Baridhara_files/cb_scout_sprite_api_003.png" style="position: absolute; left: -9px; top: -102px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 1029px; height: 255px;"></div><div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img draggable="false" src="Baridhara_files/cb_scout_sprite_api_003.png" style="position: absolute; left: -107px; top: -102px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 1029px; height: 255px;"></div><div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img draggable="false" src="Baridhara_files/cb_scout_sprite_api_003.png" style="position: absolute; left: -58px; top: -102px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 1029px; height: 255px;"></div><div style="width: 32px; height: 40px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img draggable="false" src="Baridhara_files/cb_scout_sprite_api_003.png" style="position: absolute; left: -205px; top: -102px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 1029px; height: 255px;"></div></div><div controlheight="0" controlwidth="0" style="opacity: 0.6; display: none; position: absolute;" class="gmnoprint"><img title="Rotate map 90 degrees" style="-moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; cursor: pointer; width: 22px; height: 22px;" draggable="false" src="Baridhara_files/rotate2.png"></div><div style="position: absolute; left: 5px; top: 45px;" controlheight="39" controlwidth="22" class="gmnoprint"><img draggable="false" src="Baridhara_files/szc4.png" style="width: 22px; height: 39px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px;"><div title="Zoom in" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 17px; cursor: pointer;"></div><div title="Zoom out" style="position: absolute; left: 0px; top: 18px; width: 22px; height: 17px; cursor: pointer;"></div></div></div><div style="margin: 5px; z-index: 0; position: absolute; cursor: pointer; right: 0px; top: 0px;" class="gmnoprint"><div style="float: left;"><div title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Arial,sans-serif; -moz-user-select: none; font-size: 13px; background: none repeat scroll 0% 0% rgb(255, 255, 255); padding: 1px 6px; border: 1px solid rgb(113, 123, 135); box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); font-weight: bold; min-width: 29px;">Map</div><div style="background-color: white; z-index: -1; padding-top: 2px; border-width: 0px 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgb(113, 123, 135) rgb(113, 123, 135); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); position: absolute; left: 0px; top: 20px; text-align: left; display: none;"><div title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 1px 8px 3px 5px; direction: ltr; text-align: left; white-space: nowrap;"><span style="position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px 1px 1px 1px; width: 13px; height: 13px; box-shadow: none; vertical-align: middle;" role="checkbox"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img draggable="false" src="Baridhara_files/imgs8.png" style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div style="float: left;"><div title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(51, 51, 51); font-family: Arial,sans-serif; -moz-user-select: none; font-size: 13px; background: none repeat scroll 0% 0% rgb(255, 255, 255); padding: 1px 6px; border-width: 1px 1px 1px 0px; border-style: solid solid solid none; border-color: rgb(113, 123, 135) rgb(113, 123, 135) rgb(113, 123, 135) -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); font-weight: normal; min-width: 54px;">Satellite</div><div style="background-color: white; z-index: -1; padding-top: 2px; border-width: 0px 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgb(113, 123, 135) rgb(113, 123, 135); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); position: absolute; right: 0px; top: 20px; text-align: left; display: none;"><div title="Zoom in to show 45 degree view" style="color: rgb(184, 184, 184); font-family: Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 1px 8px 3px 5px; direction: ltr; text-align: left; white-space: nowrap; display: none;"><span style="position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(241, 241, 241); border-radius: 1px 1px 1px 1px; width: 13px; height: 13px; box-shadow: none; vertical-align: middle;" role="checkbox"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img draggable="false" src="Baridhara_files/imgs8.png" style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">45°</label></div><div title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Arial,sans-serif; -moz-user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 1px 8px 3px 5px; direction: ltr; text-align: left; white-space: nowrap;"><span style="position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px 1px 1px 1px; width: 13px; height: 13px; box-shadow: none; vertical-align: middle;" role="checkbox"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img draggable="false" src="Baridhara_files/imgs8.png" style="position: absolute; left: -52px; top: -44px; -moz-user-select: none; border: 0px none; padding: 0px; margin: 0px; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div>
+							<div id="crosshair"></div>
+						</div>
+						<p><br><a href="#" class="button-style">See Our Residence, Embassy, Mosque etc.</a></p>
+					</li>
+					<li>
+						<h3><em><img src="Baridhara_files/img01.jpg" alt="" class="alignleft border" height="125" width="125"></em>Press &amp; Media</h3>
+						<p>We the lessees of plot of Baridhara Defense Officers Housing 
+Scheme (DOHS) aspire to propagate a congenial and safe community living 
+and collective welfare for ourselves and our successsors residing in the
+ BARIDHARA DOHS .</p>
+						<p><a href="#" class="button-style">Read More</a></p>
+					</li>
+					<li>
+						<h3><em><img src="Baridhara_files/img02.jpg" alt="" class="alignleft border" height="125" width="125"></em>Recent Activities</h3>
+						<p>Defence Officer Housing Scheme (DOHS) Baridhara was the third 
+project approved by Ministry of Defence vide letter No. 1. Project 
+3/92/D-9/561 dated 29.11.2012.</p>
+						<p><a href="#" class="button-style">Read More</a></p>
+					</li>
+					<li>
+						<h3><em><img src="Baridhara_files/img03.jpg" alt="" class="alignleft border" height="125" width="125"></em>Annual Reports</h3>
+						<p>An elected executive committee co-ordinates all service support
+ and community facilities of the area. DOHS Baridhara is a well secured 
+self contained and peaceful residential area.</p>
+						<p><a href="#" class="button-style">Read More</a></p>
+					</li>
+					<li>
+						<h3><em><img src="Baridhara_files/img04.jpg" alt="" class="alignleft border" height="115" width="115"></em>Meeting Minutes</h3>
+						<p>Initially there was only one entry / exit on the eastern side 
+of DOHS Baridhara.Baridhara is considered to be a well secured 
+residential area in Dhaka.</p>
+						<p><a href="#" class="button-style">Read More</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="sidebar">
+			<h2><img src="Baridhara_files/kblogger.png" alt="" align="middle-bottom" height="25px" width="25px">Announcements</h2>
+			<ul class="style3">
+				<li class="first">
+					<p><a href="#">Bashundhara Society Member Election result has been declared.</a></p>
+				</li>
+				<li>
+					<p><a href="#">Badminton club is going to celebrate 10 years celebration.</a></p>
+				</li>
+				<li>
+					<p><a href="#">Youth club has increased the number of sponsorship.</a></p>
+				</li>
+			</ul>
+			<h2><img src="Baridhara_files/calendar.png" alt="" height="32px" width="32px">Event Calendar</h2>
+			<ul class="style3">
+				<li class="first">
+					<p class="date">01-14-2013</p>
+					<p><a href="#">Bashundhara Society Member Election result has been declared.</a></p>
+				</li>
+				<li>
+					<p class="date">01-13-2013</p>
+					<p><a href="#">Badminton club is going to celebrate 10 years celebration.</a></p>
+				</li>
+				<li>
+					<p class="date">01-07-2013</p>
+					<p><a href="#">Youth club has increased the number of sponsorship.</a></p>
+				</li>
+				<li>
+					<p><a href="#"></a></p>
+				</li>
+			</ul>
+			<h3><img src="Baridhara_files/agt_home.png" alt="" align="middle-bottom-middle" height="25px" width="25px">House Keeping</h3>
+			<ul class="style3">
+				<li class="first">
+					<p><a href="#">Bashundhara Society Member Election result has been declared.</a></p>
+				</li>
+				<li>
+					<p><a href="#"></a></p>
+				</li>
+			</ul>
+			<h3>News Letter</h3>
+			<ul class="style3">
+				<li class="first">
+					<p><a href="#"><img src="Baridhara_files/rss2_buttons_17.png" alt="" align="middle" height="32px" width="128px">To subscribe.</a></p>
+				</li>
+				<li>
+					<p><a href="#"></a></p>
+				</li>
+			</ul>
+			<h3><img src="Baridhara_files/favoris_box.png" alt="" align="middle" height="36px" width="36px">Photo Gallery</h3>
+			<ul class="style3">
+				<li class="first">
+					<p><a href="#">Watch Our Photos.</a></p>
+				</li>
+				<li>
+					<p><a href="#"></a></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<p>Copyright (c) 2013 Sitename.com. All rights reserved. Design by <a href="#">Naima Khan</a>. Photos by <a href="http://www.dohsbaridhara.com/gallery.html">Photogrph</a>.</p>
+	</div>
+</div>
+
+
+<!-- Start css3menu.com BODY section -->
+
+<!-- End css3menu.com BODY section -->
+
+
+
+</body></html>
